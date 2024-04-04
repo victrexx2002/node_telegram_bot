@@ -1,8 +1,9 @@
 const axios = require('axios');
 const bot = require('../bot')
+require('dotenv').config();
 
 const weatherAPIUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
-const apiKey = 'dcc401f00c49b0c34bf912f238172d9c';
+const apiKey = process.env.OPENWEATHER_MAP_APIKEY
 
 async function getWeather(chatId) {
   try {
