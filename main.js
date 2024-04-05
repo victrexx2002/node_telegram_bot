@@ -39,3 +39,5 @@ bot.on('message', async (msg) => {
     }
   }
 });
+
+bot.startPolling()
