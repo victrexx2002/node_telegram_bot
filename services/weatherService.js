@@ -3,7 +3,7 @@ const bot = require('../bot')
 require('dotenv').config();
 
 const weatherAPIUrl = 'https://api.openweathermap.org/data/2.5/weather?q=';
-const apiKey = process.env.OPENWEATHER_MAP_APIKEY
+const apiKey = process.env.OPENWEATHERMAP_APIKEY
 
 async function getWeather(chatId) {
   try {
